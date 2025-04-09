@@ -14,9 +14,6 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 4096,
     rollupOptions: {
-      input: {
-        main: './index.html'
-      },
       output: {
         assetFileNames: 'assets/[name]-[hash][extname]',
         chunkFileNames: 'assets/[name]-[hash].js',
@@ -26,7 +23,6 @@ export default defineConfig({
     },
     sourcemap: false,
     minify: 'terser',
-    outDir: 'dist'
   },
   optimizeDeps: {
     include: ['sharp'],
