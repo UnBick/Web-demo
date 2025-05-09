@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -12,6 +13,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-xl font-semibold text-teal-400">Contact</h4>
             <div className="space-y-2 text-gray-300">
+              <p>Ranchi, Jharkhand, India</p>
               <p>Email: info@unbick.com</p>
               <p>Phone: +91 700 4944 857</p>
               <p>Phone: +91 821 0432 603</p>
@@ -31,6 +33,11 @@ export default function Footer() {
               <span className="text-sm text-gray-400">SSL Secured</span>
               <span className="text-sm text-gray-400">ISO 27001 Certified</span>
             </div>
+          </div>
+          <div className="space-y-4">
+            <Link to="/contact" className="text-teal-400 hover:text-teal-300 transition-colors">
+              Contact Us
+            </Link>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">

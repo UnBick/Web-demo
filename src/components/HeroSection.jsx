@@ -1,6 +1,7 @@
 import { useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
+import { Link } from 'react-router-dom'
 import DemoForm from './DemoForm'
 import BoyAnimation from './BoyAnimation'
 
@@ -55,9 +56,9 @@ export default function HeroSection() {
             </button>
             <button 
               onClick={scrollToFeatures}
-              className="px-8 py-4 glass-card"
+              className="px-8 py-4 glass-card hover:bg-teal-500/20 transition-all duration-300 flex items-center gap-2"
             >
-              Explore Features
+              Explore Features <span>→</span>
             </button>
           </div>
         </div>
